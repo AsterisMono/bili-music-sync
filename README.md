@@ -8,6 +8,8 @@
 
 启动一个后台进程，将指定的收藏夹同步到本地路径。
 
+默认情况下，程序会在每个整点检查收藏夹是否有更新（添加/删除），并对应更新本地的音乐文件。
+
 ```bash
 docker run -d --read-only -v 音乐保存路径:/music -v 数据库保存路径:/data -e FAV_LIST_ID=收藏夹ID asterismono/bili-music-sync:latest
 ```
