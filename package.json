@@ -1,0 +1,29 @@
+{
+  "name": "bili-music-sync",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Sync audio files from Bilibili favorite list",
+  "keywords": [
+    "Bilibili"
+  ],
+  "homepage": "https://github.com/AsterisMono/bili-music-sync",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "node-schedule": "^2.1.0",
+    "sqlite": "^4.1.2",
+    "sqlite3": "^5.1.2",
+    "youtube-dl-exec": "^2.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.3",
+    "@types/node-fetch": "^2.6.2",
+    "@types/node-schedule": "^2.1.0",
+    "typescript": "^4.8.4"
+  },
+  "scripts": {
+    "dev": "yarn tsc && node build/index.js",
+    "build": "yarn tsc",
+    "docker-build": "docker build -t asterismono/bili-music-sync:v$npm_package_version -t asterismono/bili-music-sync:latest ."
+  },
+  "type": "module"
+}

@@ -1,0 +1,7 @@
+node_modules/
+.ff_bin/
+.vscode/
+music/
+build/
+data/
+database.db

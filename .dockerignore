@@ -1,0 +1,6 @@
+music/
+node_modules/
+.vscode/
+build/
+data/
+database.db
